@@ -1,5 +1,6 @@
 import { Component, HostBinding, Input } from '@angular/core';
-import { size, TcSize, TcView, view } from '@ngx-tc/base';
+
+import { Size, size, TcSize, TcView, View, view, Align, align } from '@ngx-tc/base';
 
 @Component({
   selector: '[tc-button]',
@@ -16,8 +17,8 @@ export class ButtonComponent implements TcView, TcSize {
   @HostBinding('class.btn-load') @Input() load: boolean = false;
   @HostBinding('class.btn-outline') @Input() outline: boolean = false;
   @HostBinding('class.btn-icon-animation') @Input() iconAnimation: boolean = false;
-  @HostBinding('class.btn-left') get alignLeft() { return this.align === 'left' };
-  @HostBinding('class.btn-right') get alignRight() { return this.align === 'right' };
+  @HostBinding('class.btn-start') get alignLeft() { return this.align === align.start };
+  @HostBinding('class.btn-end') get alignRight() { return this.align === align.end };
   @HostBinding('class.btn-sm') get sizeSm() { return this.tcSize === size.sm };
   @HostBinding('class.btn-lg') get sizeLg() { return this.tcSize === size.lg };
   @HostBinding('class.btn-primary') get viewDefault() { return this.tcView === view.primary };
@@ -27,9 +28,9 @@ export class ButtonComponent implements TcView, TcSize {
   @HostBinding('class.btn-warning') get viewWarning() { return this.tcView === view.warning };
   @HostBinding('class.btn-error') get viewError() { return this.tcView === view.error };
 
-  @Input('view') tcView: string | view = view.primary;
-  @Input('size') tcSize: string | size = size.default;
-  @Input() align: string = 'center';
+  @Input('view') tcView: View = view.primary;
+  @Input('size') tcSize: Size = size.default;
+  @Input() align: Align = align.center;
   @Input() tcLineStyle: string;
   @Input() beforeIcon: string;
   @Input() afterIcon: string;
