@@ -1,11 +1,12 @@
 {
   "name": "@ngx-tc/button",
-  "version": "0.0.7",
+  "version": "1.0.0",
   "author": "type0code",
   "license": "MIT",
-  "description": "Angular UI components library",
-  "keywords": ["angular", "angular UI", "angular components", "ng", "ngx", "angular form", "angular control", "angular button"],
+  "description": "Angular library that provides developers with a UI component to create and customize buttons in their applications.",
+  "keywords": ["angular", "angular UI", "angular components", "ng", "ngx", "angular form", "angular link", "angular button"],
   "repository": "https://github.com/ngx-tc/button",
+  "homepage": "http://tc-library.type-code.pro/#/components/buttons",
   "config": {
     "access": "public"
   },
@@ -13,7 +14,7 @@
     "@angular/common": "^15.1.5",
     "@angular/core": "^15.1.5",
     "@angular/forms": "^15.1.5",
-    "@ngx-tc/base": "^0.0.17"
+    "@ngx-tc/base": "^1.0.1"
   },
   "dependencies": {
     "tslib": "^2.5.0"

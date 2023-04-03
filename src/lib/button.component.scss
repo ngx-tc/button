@@ -14,6 +14,7 @@ $_types: ('primary', 'accent', 'success', 'info', 'warning', 'error');
 
 :host {
   --tc-btn-fs: var(--tc-base-fs);
+  --tc-btn-icon-fs: 1.3em;
   --tc-btn-ff: var(--tc-base-ff);
   --tc-btn-fw: 700;
   --tc-btn-module-rem: var(--tc-base-module-rem);
@@ -87,7 +88,7 @@ $_types: ('primary', 'accent', 'success', 'info', 'warning', 'error');
 		z-index: 2;
   }
   .btn-icon {
-    font-size: 1.3em;
+    font-size: var(--tc-btn-icon-fs);
     margin: 0 calc(var(--tc-btn-module-rem) * .5);
   }
   .btn-loader {
@@ -124,11 +125,11 @@ $_types: ('primary', 'accent', 'success', 'info', 'warning', 'error');
     display: block;
     width: 100%;
   }
-  &.btn-left {
+  &.btn-start {
     justify-content: flex-start;
     text-align: left;
   }
-  &.btn-right {
+  &.btn-end {
     justify-content: flex-end;
     text-align: right;
   }
