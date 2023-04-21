@@ -127,11 +127,11 @@ $_types: ('primary', 'accent', 'success', 'info', 'warning', 'error');
   }
   &.btn-start {
     justify-content: flex-start;
-    text-align: left;
+    text-align: start;
   }
   &.btn-end {
     justify-content: flex-end;
-    text-align: right;
+    text-align: end;
   }
   &.btn-lg {
     --tc-btn-fs: calc(var(--tc-base-fs) * 1.2);
