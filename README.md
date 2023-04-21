@@ -27,7 +27,7 @@ import { TcButtonModule } from '@ngx-tc/button';
 export class AppModule {}
 ```
 
-Use the `[tc-button]` directive in you app:
+Use the `tc-button` directive in you app:
 ```html
 <button tc-button>
   Button

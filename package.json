@@ -1,6 +1,6 @@
 {
   "name": "@ngx-tc/button",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "type0code",
   "license": "MIT",
   "description": "Angular library that provides developers with a UI component to create and customize buttons in their applications.",
